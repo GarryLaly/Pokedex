@@ -5,6 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // screen
 import {
   Home,
+  Detail,
+  Favorite,
 } from '../screens';
 
 const Routes = () => {
@@ -16,6 +18,8 @@ const Routes = () => {
         screenOptions={{headerShown: false}}
         initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Detail" component={Detail} />
+        <Stack.Screen name="Favorite" component={Favorite} />
       </Stack.Navigator>
     </NavigationContainer>
   );
